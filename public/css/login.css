@@ -1,0 +1,116 @@
+
+
+body{
+    background-color: white;
+    background: url(../images/loginbg.jpg) no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    margin-top: 0;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 250px;
+}
+
+.navbar-dark .navbar-nav .nav-link.acive,
+.navbar-dark .navbar-nav .nav-link:hover
+{
+    color: rgb(205, 219, 8);
+}
+
+
+#log{
+
+    border: 2px solid white;
+    padding: 40px 40px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    box-shadow: 0px 0px 13px 8px rgba(0,0,0,0.75);
+}
+
+#log h1{
+    margin-bottom: 50px;
+    color: seashell;
+    text-align: center;
+}
+
+.form-group label{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+
+
+
+.forgot,.form-check{
+    display: inline-block;
+}
+.forgot a{
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+.message {
+    margin: 15px 0 0;
+    color: #412626;
+    font-size: 18px;
+  }
+
+.message a{
+    color: rgb(228, 11, 11);
+    text-decoration: none;
+}
+
+
+.footer-menu{
+    list-style: none;
+    margin: 15px 0;
+    padding: 0;
+}
+
+
+
+.footer-div{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(216, 221, 226);
+}
+
+.footer-copyright{
+    background-color: rgb(74, 78, 93);
+    
+}
+.footer-copyright p{
+    font-size: small;
+    color: white;
+    
+}
+.footer-column
+{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.follow{
+    list-style: none;
+    margin: 15px 0;
+    padding: 0;
+}
+.follow a{
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 1.5rem;
+    width: 38px;
+    height: 32px;
+}
+.follow li{
+    
+    display: inline-block;
+    
+}
+.follow li img {
+    
+    margin-right: 1.5rem;
+    
+}

@@ -1,0 +1,149 @@
+
+.navbar-dark .navbar-nav .nav-link.acive,
+.navbar-dark .navbar-nav .nav-link:hover
+{
+    color: rgb(205, 219, 8);
+}
+
+
+.sl{
+    margin-top: 5rem;
+}
+
+.row1{
+    margin-bottom: 6rem;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 0px 0px 13px 8px rgba(0,0,0,0.75);
+}
+.card{
+    background-color: rgb(243, 243, 243);
+    border: 2px solid rgb(253, 253, 253);
+    width: 15rem;
+    margin:0 auto;
+    height: 29rem;
+    box-shadow: 0px 0px 13px 8px rgba(0,0,0,0.75);
+    margin-bottom: 4rem;
+}
+
+#heading{
+    text-align: center;
+    font-family: "Merriweather", "Georgia", serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(17, 0, 0);
+   margin-bottom: 5rem;
+    text-decoration: underline;
+   
+}
+
+.card img{
+    height: 17rem;
+}
+
+.card-text{
+    font-size: small;
+}
+
+body{
+    background-color: #158da0;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 250px;
+}
+
+.image img{
+   
+ margin: auto;    
+display: block;
+}
+
+.about p{
+    font-weight: 500;
+}
+
+
+.footer-menu{
+    list-style: none;
+    margin: 15px 0;
+    padding: 0;
+}
+
+
+
+.footer-div{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(216, 221, 226);
+}
+
+.footer-copyright{
+    background-color: rgb(74, 78, 93);
+    
+}
+.footer-copyright p{
+    font-size: small;
+    color: white;
+    
+}
+.footer-column
+{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.follow{
+    list-style: none;
+    margin: 15px 0;
+    padding: 0;
+}
+.follow a{
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 1.5rem;
+    width: 38px;
+    height: 32px;
+}
+.follow li{
+    
+    display: inline-block;
+    
+}
+.follow li img {
+    
+    margin-right: 1.5rem;
+    
+}
+
+
+
+ #edit, #delete{
+display: inline-block;    
+
+}
+
+.buttons{
+    padding-left: 70%;
+}
+
+.button{
+    padding-left: 60%;
+}
+
+
+.labels{
+    width:2rem;
+    margin-right: 3rem;
+}
+
+.form-group label {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+.headings{
+    color: rgb(0, 0, 0);
+}

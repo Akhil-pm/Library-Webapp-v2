@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=title%></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/css/login.css"> 
+    <link rel="icon" href="/images/logo2.png">
+</head>
+<body>
+  <!-- ****************** NAVBAR ********************* -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="/">
+        <img src="../images/logo2.png" width="30" height="30" alt="">
+      </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <% for(i=0;i<nav.length;i++){%>
+          <li class="nav-item active">
+
+            <a class="nav-link" href="<%=nav[i].link%>"><%=nav[i].name%></a>
+          </li>
+          <% } %>
+        
+      </ul>
+    </div>
+    </div>
+  </nav>
+    
+<!-- ****************** LOGIN FORM ********************* -->
+  <div class="container-fluid bg">
+   <div class="row">
+     <div class="col-md-4 col-sm-4 col-sx-12"></div>
+     <div class="col-md-4 col-sm-4 col-sx-12">
+      <form id="log" method="POST" action="/login/log">
+        <% if(msg!=""){ %>
+        <div class="alert alert-danger" role="alert">
+          <strong><%=msg%></strong>
+        </div>
+        <% } %>
+
+
+        <h1>Library login</h1>
+        <div class="form-group">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" id="email" class="form-control"  placeholder="email id" name="email">
+          </div>
+        <div class="form-group">
+          <label for="pwd">Password</label>
+          <input type="password" class="form-control" id="pwd" placeholder="password" name="password">
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Remember me</label>
+        </div>
+    
+        <div class="forgot float-right">
+          <a href="/">Forgot password?</a>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Login</button>
+ 
+        <p class="message">Not registered? <a href="/signup">Create an account</a></p>
+
+      </form>
+
+     </div>
+     <div class="col-md-4 col-sm-4 col-sx-12"></div>
+   </div>
+  </div>
+
+<!-- ****************** FOOTER ********************* -->
+  <footer class="footer-div">
+    <div class="container">      
+      <div class="row">
+          <div class="col-md-3 col-sm-4 col-xs-6 footer-column">
+          <h4>About us</h4>
+          <div class="footer-menu">
+            <p>Since 1891, we have grown from a single reading room in Pioneer Square to a world-class Library system with 27 locations.
+              </p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 footer-column">
+          <h4>Quick links</h4>
+          <ul class="footer-menu">
+            <li><a href="/signup">Sign up</a></li>
+            <li><a href="/login">Login</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 footer-column">
+          <h4>Contact us</h4>  
+          <div class="footer-menu">
+          <p> <i class="fas fa-home mr-3"></i> H-213, Tvm, Kerala</p>  
+            <p> <i class="fas fa-envelope mr-3"></i> lib@gmail.com</p> 
+            <p><i class="fas fa-phone mr-3"></i> +91 9562345545</p>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-4 col-xs-6 footer-column ">
+          <h4>Follow us</h4>
+          <ul class="follow">
+     <li><a  href="http://www.facebook.com" target="_blank">
+        <img src="../images/fb.png" width="40" height="40">
+      </a></li> 
+     
+      <li>  <a  href="http://www.twitter.com" target="_blank">
+        <img src="../images/twitter.png" width="40" height="40">
+      </a></li> 
+ 
+      <li>   <a  href="http://www.instagram.com" target="_blank">
+        <img src="../images/insta.png" width="40" height="40">
+      </a></li> 
+    </ul> 
+        </div>      
+      </div>
+    </div>
+    
+  <div class="footer-copyright text-center py-1">
+  <p> Copyright © ICTAK</p>
+  </div>
+  </footer>
+
+
+  <!-- <script src="/js/login.js"></script> -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  
+</body>
+</html>

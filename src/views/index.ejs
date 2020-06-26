@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=title%></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/css/home.css"> 
+    <link rel="icon" href="/images/logo2.png">
+</head>
+<body>
+  <!-- ****************** NAVBAR ********************* -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+              <a class="navbar-brand" href="/">
+                <img src="../images/logo2.png" width="30" height="30" alt="">
+              </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+      <ul class="nav navbar-nav ">
+        <% for(i=0;i<nav.length;i++){%>
+                <li class="nav-item active">
+
+                  <a class="nav-link" href="<%=nav[i].link%>"><%=nav[i].name%></a>
+                </li>
+                <% } %>
+                
+              </ul>
+            </div>
+            </div>
+          </nav>
+       
+<!-- ****************** CONTENTS ********************* -->
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="3000">
+            <div class="carousel-inner">
+              <div class="carousel-item image1 active">
+                <img src="../images/library2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption text-center">
+                  <h1 >Welcome To Library</h1>
+                  <a class="btn btn-outline-light btn-lg" href="/signup">Get Started</a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../images/library3.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../images/library1.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+
+          <div class="lib">
+
+          <div class="container desc">
+            <div class="description">
+            <h1>OUR LIBRARY</h1>
+            <p>We have been part of the Seattle community since shortly after the city’s founding. Since 1891, we have grown from a single reading room in Pioneer Square to a 
+              world-class Library system with 27 locations. Learn more about us, our contributions to the city, and how you can support our work.</p><br>
+              <h3>Discover books you will love</h3>
+              <p>We love to read. The only thing we like more is helping readers like you discover books you will not want to put down. Explore our staff picks and recommended reading lists, or ask us for suggestions.</p>
+              <h3>Digital Magazines & Newspapers</h3>
+              <p>Read digital magazines and newspapers using a web browser or your favorite mobile device. Explore hundreds of publications with articles available to read online for free with a Library card. All of our branches 
+                offer print magazines and newspapers for you to read or borrow.</p>
+          </div>
+            </div>
+
+          </div>
+<!-- ****************** FOOTER ********************* -->
+          <footer class="footer-div">
+            <div class="container">      
+              <div class="row">
+                  <div class="col-md-3 col-sm-4 col-xs-6 footer-column">
+                  <h4>About us</h4>
+                  <div class="footer-menu">
+                    <p>Since 1891, we have grown from a single reading room in Pioneer Square to a world-class Library system with 27 locations.
+                      </p>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-6 footer-column">
+                  <h4>Quick links</h4>
+                  <ul class="footer-menu">
+                    <li><a href="/signup">Sign up</a></li>
+                    <li><a href="/login">Login</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-6 footer-column">
+                  <h4>Contact us</h4>         
+                  <div class="footer-menu">
+                  <p><i class="fas fa-home mr-3"></i> H-213, Tvm, Kerala</p>         
+                   <p><i class="fas fa-envelope mr-3"></i> lib@gmail.com</p>
+                   <p><i class="fas fa-phone mr-3"></i> +91 9562345545</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 col-sm-4 col-xs-6 footer-column ">
+                  <h4>Follow us</h4> 
+                  <ul class="follow">
+             <li><a  href="http://www.facebook.com" target="_blank">
+                <img src="../images/fb.png" width="40" height="40">
+              </a></li> 
+             
+              <li>  <a  href="http://www.twitter.com" target="_blank">
+                <img src="../images/twitter.png" width="40" height="40">
+              </a></li> 
+                      
+              <li>   <a  href="http://www.instagram.com" target="_blank">
+                <img src="../images/insta.png" width="40" height="40">
+              </a></li> 
+            </ul>          
+                </div>               
+              </div>
+            </div>
+          <div class="footer-copyright text-center py-1">
+          <p> Copyright © ICTAK</p>
+          </div>
+          </footer>
+
+         
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
